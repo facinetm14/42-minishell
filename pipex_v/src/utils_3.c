@@ -51,12 +51,7 @@ void	ft_exit_code(int ex_code, int mode)
 		g_exit_code = 0;
 	}
 	else
-	{
-		if (ex_code < 0)
-			g_exit_code = (ex_code * -1) % 256;
-		else
-			g_exit_code = ex_code % 256;
-	}
+		g_exit_code = ex_code % 256;
 }
 
 int	ft_check_ex_opts(t_prgm *vars)
